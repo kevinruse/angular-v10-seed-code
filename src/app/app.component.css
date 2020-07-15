@@ -4,3 +4,15 @@ p {
     margin: 1em;
     background-color: #fff;
 }
+
+form {
+    width: 100%;
+    height: 3em;
+    padding-top: 1.5em;
+}
+.warning {
+    background-color: #f00;
+}
+.caution {
+    background-color: #ffa500;
+}

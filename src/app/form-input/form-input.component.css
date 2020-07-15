@@ -1,0 +1,30 @@
+:host {
+    border: 1px solid #333;
+    border-radius: 2px;
+    padding: 4px;
+    background: #fff;
+}
+
+.icon {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 12px;
+}
+
+input {
+    border: none;
+    height: 20px;
+}
+
+:host-context(.warning) small {
+    color: #f00;
+}
+:host-context(.caution) small {
+    color: #ffa500;
+}
+
+/*
+:host small {
+    color: #f00;
+}
+*/
