@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-import { NgModule }      from '@angular/core';
-=======
-// chapter 5
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
