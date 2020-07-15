@@ -1,0 +1,12 @@
+  @Input()
+    icon: string;
+
+    get iconClasses() {
+      const cssIconClasses = {
+        'fa': true
+        };
+      if (this.icon) {
+        cssIconClasses['fa-' + this.icon] = true;
+      }
+        return cssIconClasses;
+      }
