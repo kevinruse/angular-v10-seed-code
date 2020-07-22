@@ -1,6 +1,7 @@
 <div>
     <app-header [user]="user"></app-header>
-    <app-child></app-child>
+    <p>Logged In: {{ loggedIn }}</p>
+    <app-child (login)="logIn($event)"></app-child>
     <app-form-input icon="envelope">
         <small>Business Email</small>
         <label for="emailAddress">Email:</label>
