@@ -1,5 +1,7 @@
 <div>
     <app-header [user]="user"></app-header>
+    <button (click)="addFruit()">Add a serving of fruit</button>
+    <h2>Fruit Counter: <span #fruit></span></h2>
     <p>Logged In: {{ loggedIn }}</p>
     <app-child (login)="logIn($event)"></app-child>
     <app-form-input icon="envelope">
