@@ -1,13 +1,20 @@
 <div>
     <app-header [user]="user"></app-header>
-    <button (click)="addFruit()">Add a serving of fruit</button>
-    <h2>Fruit Counter: <span #fruit></span></h2>
+    <section *ngIf="!user.registered">
+        <img src="../assets/images/chooseMyPlate.gov.png">
+    </section>
+    <section *ngIf="user.registered">
+        <img src="../assets/images/generic-plate.png">
+    </section>
+
+  <!--  <button (click)="addFruit()">Add a serving of fruit</button>
+    <h2>Fruit Counter: <span #fruit></span></h2>-->
     <p>Logged In: {{ loggedIn }}</p>
     <app-child (login)="logIn($event)"></app-child>
-    <app-form-input icon="envelope">
+  <!--  <app-form-input icon="envelope">
         <small>Business Email</small>
         <label for="emailAddress">Email:</label>
         <input id="emailAddress" type="email">
-    </app-form-input>
+    </app-form-input>-->
 </div>
 
