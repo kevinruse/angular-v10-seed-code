@@ -15,7 +15,20 @@ export class AppComponent implements AfterViewInit {
         reqsStatus: {fruitMet: false, vegMet: false, proteinMet: false, grainMet: false},
         registered: false, email: 'kevin@kevinruse.com'};
     loggedIn: boolean = false;
-    logIn(evt): void {
+    stylePreference: string;
+
+    setStylePreference(value): void {
+        this.stylePreference = value;
+    }
+
+    setImportance(): object {
+        if (this.stylePreference === 'hilite') {
+            return {'background-color': 'yellow'};
+        } else if (this.stylePreference === 'caps') {
+            return {'text-transform': 'uppercase'};
+        }
+    }
+        logIn(evt): void {
         console.log(evt);
         this.loggedIn = evt;
         this.user.registered = !this.user.registered;

@@ -22,5 +22,17 @@
         <label for="emailAddress">Email:</label>
         <input id="emailAddress" type="email">
     </app-form-input>-->
+    <p>This text is <span [ngStyle]="setImportance()">very</span> important!</p>
+    <input type="radio" name="preference"
+           id="importantHighlight"
+           style="transform:scale(1.5)"
+           (click)="setStylePreference('hilite')">
+    <label for="importantHighlight">Highlight</label>
+    <input type="radio" name="preference"
+           id="importantCaps"
+           style="transform:scale(1.5)"
+           (click)="setStylePreference('caps')">
+    <label for="importantCaps">Caps</label>
+
 </div>
 
