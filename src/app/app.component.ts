@@ -14,10 +14,11 @@ export class AppComponent implements AfterViewInit {
     user = {id: 1, name: 'Kevin', gender: 'M', ageGroup: '51+', userCode: 'M51+', reqs: {},
         reqsStatus: {fruitMet: false, vegMet: false, proteinMet: false, grainMet: false},
         registered: false, email: 'kevin@kevinruse.com'};
-    loggedIn: boolean;
+    loggedIn: boolean = false;
     logIn(evt): void {
         console.log(evt);
         this.loggedIn = evt;
+        this.user.registered = !this.user.registered;
     }
 
     addFruit(): void {
