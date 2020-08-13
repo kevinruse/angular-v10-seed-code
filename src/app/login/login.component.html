@@ -1,0 +1,12 @@
+<form #userNameForm="ngForm"
+      (ngSubmit)="onSubmit(userNameForm.value)">
+    <label for="userName">User Name</label>
+    <input type="text"
+           id="userName"
+           name="userName"
+           [(ngModel)]="userName">
+    <button type="submit">Submit</button>
+    <button type="button" (click)="log(userNameForm)">Access Form Properties with ngForm</button>
+</form>
+<h1>Hi {{ userName }}</h1>
+

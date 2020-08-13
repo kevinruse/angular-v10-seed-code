@@ -1,23 +1,24 @@
 <div>
     <app-header [user]="user"></app-header>
-    <img src="assets/images/apple.png" status="You need to eat two more servings of fruit">
+    <app-login></app-login>
+  <!--  <img src="assets/images/apple.png" status="You need to eat two more servings of fruit">
     <section *ngIf="!user.registered">
         <img src="../assets/images/chooseMyPlate.gov.png">
     </section>
     <section *ngIf="user.registered">
         <img src="../assets/images/generic-plate.png">
-    </section>
+    </section>-->
 
   <!--  <button (click)="addFruit()">Add a serving of fruit</button>
     <h2>Fruit Counter: <span #fruit></span></h2>-->
-    <div [ngSwitch]="loggedIn">
+ <!--   <div [ngSwitch]="loggedIn">
         <p>Logged In:
             <span *ngSwitchCase="false" class="notRegistered">{{ loggedIn }}</span>
             <span *ngSwitchCase="true">{{ loggedIn }}</span>
             <span *ngSwitchDefault>Default Text Goes Here</span>
         </p>
     </div>
-    <app-child (login)="logIn($event)"></app-child>
+    <app-child (login)="logIn($event)"></app-child>-->
   <!--  <app-form-input icon="envelope">
         <small>Business Email</small>
         <label for="emailAddress">Email:</label>
