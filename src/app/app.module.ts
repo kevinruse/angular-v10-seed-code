@@ -1,4 +1,4 @@
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,7 +15,8 @@ import { LoginComponent } from './login/login.component';
 @NgModule({
     imports:      [ BrowserModule,
                     FontAwesomeModule,
-                    FormsModule],
+                    FormsModule,
+                    ReactiveFormsModule],
     declarations: [ AppComponent,
                     HeaderComponent,
                     ChildComponent,
