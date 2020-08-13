@@ -19,6 +19,7 @@
     <button type="submit">Submit Reactive Form</button>
 
     <button (click)="log(nameForm)">Access Reactive Form Properties with ngForm</button>
+    <p *ngIf="!nameForm.controls['userName'].valid && nameForm.controls['userName'].touched">You must enter a name and it cannot exceed five characters.</p>
 </form>
 <h1>Hi {{ userName.value }}</h1>
 
