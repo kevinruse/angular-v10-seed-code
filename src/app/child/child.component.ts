@@ -7,6 +7,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
+  todaysPlate: Date = new Date();
+
   fruitStatus: number = 0;
 
   @Output()
